@@ -48,11 +48,11 @@ which have built in support for real-time notifications. You may refer to https:
 handlers.New_Test=function(args,context)
 {
      var matchId = args.matchId; // Retrieve the match ID from the arguments
-    var joinCode = args.joinCode; // Save the join code using the match ID as the key
+    var joinCodeValue = args.joinCode; // Save the join code using the match ID as the key
     var DataKey = "JoinCode_Match_" + matchId;
     server.SetTitleData({
         Key: DataKey,
-        Value: joinCode
+        Value: joinCodeValue
     });
 
     // Log the saved value before returning the success message
