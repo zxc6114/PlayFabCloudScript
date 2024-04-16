@@ -49,9 +49,9 @@ handlers.New_Test=function(args,context)
 {
      var matchId = args.matchId; // Retrieve the match ID from the arguments
     var joinCode = args.joinCode; // Save the join code using the match ID as the key
-    var Data = "JoinCode_Match_" + matchId;
+    var DataKey = "JoinCode_Match_" + matchId;
     server.SetTitleData({
-        Key: Data,
+        Key: DataKey,
         Value: joinCode
     });
 
